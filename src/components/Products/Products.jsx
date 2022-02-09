@@ -2,26 +2,26 @@ import { Grid } from '@material-ui/core';
 import Product from '../Product/Product';
 import useStyles from './styles';
 
-const products = [
-	{
-		id: 1,
-		name: 'shoes',
-		description: 'running shoes',
-		price: '$5',
-		image:
-			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cushion-shoes-7659-1584132587.jpg?crop=1.00xw:0.701xh;0,0.229xh&resize=1200:*',
-	},
-	{
-		id: 2,
-		name: 'macbook',
-		description: 'Apple MacBook',
-		price: '$10',
-		image:
-			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cushion-shoes-7659-1584132587.jpg?crop=1.00xw:0.701xh;0,0.229xh&resize=1200:*',
-	},
-];
+// const products = [
+// 	{
+// 		id: 1,
+// 		name: 'shoes',
+// 		description: 'running shoes',
+// 		price: '$5',
+// 		image:
+// 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cushion-shoes-7659-1584132587.jpg?crop=1.00xw:0.701xh;0,0.229xh&resize=1200:*',
+// 	},
+// 	{
+// 		id: 2,
+// 		name: 'macbook',
+// 		description: 'Apple MacBook',
+// 		price: '$10',
+// 		image:
+// 			'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/cushion-shoes-7659-1584132587.jpg?crop=1.00xw:0.701xh;0,0.229xh&resize=1200:*',
+// 	},
+// ];
 
-const Products = () => {
+const Products = ({ products }) => {
 	const classes = useStyles();
 
 	return (
