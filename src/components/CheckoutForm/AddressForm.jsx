@@ -12,7 +12,7 @@ import { useForm, FormProvider } from 'react-hook-form';
 import { commerce } from '../../lib/commerce';
 import CustomTextField from './CustomTextField';
 
-const AddressForm = ({ checkoutToken, next }) => {
+const AddressForm = ({ checkoutToken, test }) => {
 	const methods = useForm();
 
 	const [shippingCountries, setShippingCountries] = useState([]);
@@ -96,9 +96,9 @@ const AddressForm = ({ checkoutToken, next }) => {
 			<FormProvider {...methods}>
 				<form
 					onSubmit={methods.handleSubmit((data) =>
-						next({
+						test({
 							...data,
-							setShippingCountry,
+							shippingCountry,
 							shippingSubDivision,
 							shippingOption,
 						})
