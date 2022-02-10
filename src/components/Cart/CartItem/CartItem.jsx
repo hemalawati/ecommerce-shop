@@ -10,7 +10,7 @@ import useStyles from './styles';
 
 const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
 	const classes = useStyles();
-	console.log('item cartitem', item);
+
 	return (
 		<Card>
 			<CardMedia
